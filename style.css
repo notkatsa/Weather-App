@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    font-family: 'Roboto', 'Sans';
+}
+body {
+    height: 100vh;
+    background-color: rgb(141, 141, 198);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: blueviolet;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.temprature {
+    font-size: 25px;
+}
+
+.Location {
+    font-size: 30px;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#Location-input {
+    font-size: 20px;
+}
