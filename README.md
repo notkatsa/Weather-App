@@ -6,4 +6,4 @@ Quick spin-up of a weather app. Used OpenWeatherAPI. This project allowed me to 
 - Promises, Callbacks
 - fetch, async and await keywords.
 
-You can check out the website <a href="notkatsa.github.io/Weather-App/">here</a>.
+You can check out the website <a href="https://notkatsa.github.io/Weather-App/">here</a>.
