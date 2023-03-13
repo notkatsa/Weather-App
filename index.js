@@ -27,20 +27,17 @@ class weather {
         tempDiv.innerText = this.temp.temp + '°C' ;
 
         const wrapper = document.body.getElementsByClassName("wrapper")[0];
-        const wicon = new Image();
+        const wicon = document.getElementById("icon");
         wicon.src = `https://openweathermap.org/img/wn/${this.others.icon}.png`;
-        wrapper.appendChild(wicon);
 
         const card = document.body.getElementsByClassName("card")[0];
-        const desc = document.createElement('div');
-        desc.classList.add("description");
-        desc.innerHTML = `Feels like ${this.temp.feelsLike}°C | ${this.others.description} | Humidity: ${this.temp.Humidity}%`
-        card.appendChild(desc);
+        const desc = document.body.getElementsByClassName("description")[0];
+        desc.innerHTML = `Feels like ${this.temp.feelsLike}°C | ${this.others.description} | Humidity: ${this.temp.Humidity}%`;
     }
     DisplayOthers() {
         const othersDiv = document.body.getElementsByClassName("others")[0];
-        var sunRiseTime = new Date(this.others.sunrise).toLocaleTimeString();
-        var sunSetTime = new Date(this.others.sunset).toLocaleTimeString();
+        var sunRiseTime = new Date(this.others.sunrise*1000).toLocaleTimeString();
+        var sunSetTime = new Date(this.others.sunset*1000).toLocaleTimeString();
         othersDiv.innerHTML = `Sunrise: ${sunRiseTime} | ${sunSetTime}`
     }
 }
