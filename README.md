@@ -4,4 +4,6 @@ Quick spin-up of a weather app. Used OpenWeatherAPI. This project allowed me to 
 - Object Oriented Programming
 - Json notation
 - Promises, Callbacks
-- fetch, async and await
+- fetch, async and await keywords.
+
+You can check out the website <a href="notkatsa.github.io">here</a>.
